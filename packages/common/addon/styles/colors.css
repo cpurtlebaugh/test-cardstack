@@ -1,0 +1,20 @@
+:root {
+  --cardboard-white: #fff;
+  --cardboard-black: #000;
+  --cardboard-off-white: #fafafa;
+  --cardboard-highlight-gray: #f8f8f8;
+  --cardboard-light-gray: #f2f2f4;
+  --cardboard-border-gray: #e5e5e9;
+  --cardboard-darker-border-gray: #ccccd5;
+  --cardboard-border-highlight-gray: #7f7f7f;
+  --cardboard-muted-gray: #757575;
+  --cardboard-purple-gray: #9999ab;
+  --cardboard-light-purple: #676680;
+  --cardboard-purple: #343356;
+  --cardboard-highlight-purple: #4d4c6d;
+  --cardboard-dark-purple: #1b1942;
+  --cardboard-deep-purple: #01002c;
+  --cardboard-green-success: #3aa78f;
+  --cardboard-red-warning: #ff0404;
+  --cardboard-gradient: linear-gradient(90deg, #5e8fff 0%, #9b49ff 100%), #7a6fff;
+}

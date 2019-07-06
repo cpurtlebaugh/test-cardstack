@@ -1,0 +1,33 @@
+/* app.css */
+
+@import "error-card-isolated.css";
+/*
+body {
+  box-sizing: border-box;
+  background-color: var(--deep-background, #01002c); /* this style should probably move to tools package  
+  color: #000;
+  font-family: "Roboto Regular", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.3;
+  letter-spacing: 0;
+  margin: 0;
+}
+
+.ember-toolbars {
+  /* it appears that our CSS for the themes has geometry that is sensitive to
+  the ember-toolbars animation that makes the bottom edge slide up. The effect is that
+  it looks like the article itself is sliding down at the same time as the bottom edge slides
+  up. Ultimately we need to fix the themes CSS to be independent of the bottom edge animations,
+  until then, using this quick/ugly hack to hide this problem. I'm sure I'll regret this...
+  
+  margin-bottom: 0 !important;
+}
+
+/* dont show the framework "published" dropdown as its very disconnected from how we are tracking published status, and this is not really fully baked in the framework yet 
+.cs-version-control-dropdown {
+  display: none;
+}
+.cs-active-composition-panel--main.header-expanded {
+  --tools-scrollable-panel-height: 20rem;
+}
+*/

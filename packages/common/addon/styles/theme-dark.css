@@ -1,0 +1,88 @@
+.dark-theme {
+  /* Fonts */
+  --cardboard-merriweather-regular: "Merriweather Regular";
+  --cardboard-merriweather-bold: "Merriweather Bold";
+  --cardboard-merriweather-black: "Merriweather Black", var(--cardboard-merriweather-bold);
+
+  /* Text */
+  --cardboard-theme-title-text: var(--cardboard-merriweather-black);
+  --cardboard-theme-subhead-text: var(--cardboard-roboto-regular);
+  --cardboard-theme-paragraph-text: var(--cardboard-merriweather-regular);
+  --cardboard-theme-dropcap-text: var(--cardboard-merriweather-black);
+  --cardboard-theme-blockquote-text: var(--cardboard-merriweather-regular);
+
+  /* Colors */
+  --cardboard-theme-background-color: #000;
+  --cardboard-theme-text-color: #fff;
+  --cardboard-theme-highlight-color: #cc0000;
+  --cardboard-theme-paragraph-color: #a2a2a2;
+}
+
+.dark-theme--title {
+  position: relative;
+  margin-bottom: 1em;
+  border: none;
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  z-index: 0;
+}
+.dark-theme--title::before {
+  content: "";
+  position: absolute;
+  top: 1.4em;
+  left: 2em;
+  width: calc(100% - 2em);
+  height: calc(100% - 1.4em);
+  background-color: transparent;
+  border: 4px solid var(--cardboard-theme-highlight-color);
+  color: var(--cardboard-theme-text-color);
+  z-index: -1;
+}
+
+.dark-theme .article-isolated--description,
+.dark-theme--subhead,
+.dark-theme--mobiledoc h2 {
+  font-weight: 400;
+  padding-right: 3em;
+}
+
+.dark-theme--mobiledoc h3 {
+  background-color: var(--cardboard-theme-background-color);
+  font-weight: 400;
+  letter-spacing: 6px;
+}
+
+.dark-theme--mobiledoc p:first-of-type::first-letter {
+  color: var(--cardboard-theme-text-color);
+  letter-spacing: 0.03em;
+  line-height: 0.8;
+  text-shadow: -7px -2px 0 var(--cardboard-theme-highlight-color);
+}
+
+.dark-theme--mobiledoc blockquote {
+  position: relative;
+  letter-spacing: -0.4px;
+  max-width: 600px;
+  z-index: 0;
+}
+.dark-theme--mobiledoc blockquote::before {
+  position: absolute;
+  top: 1.5em;
+  left: 3em;
+  width: calc(100% - 1em);
+  height: calc(100% - 1em);
+  content: "";
+  background-color: var(--cardboard-theme-highlight-color);
+  font-size: 40px;
+  z-index: -1;
+}
+.dark-theme--mobiledoc blockquote::after {
+  font-family: var(--cardboard-roboto-italic);
+  font-size: 14px;
+  font-style: italic;
+  text-align: right;
+  padding: 10px;
+  letter-spacing: 0;
+}
+
